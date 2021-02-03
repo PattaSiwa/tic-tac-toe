@@ -8,20 +8,21 @@ const markBoard = (event) => {
     //if gameWin is true then stop appending to the board
     if (gameWin === false) {
 
+        //mark x when it's odd
         if (startValue % 2 === 1) {
             if ($sqDiv.children().length === 0) {
                 $($sqDiv).append($xMark)
-
                 //each time we add a mark we put values to a mapped out board
                 gameBoard[$sqDiv.attr('id')] = 'X'
                 //then we wanna run checkResult
-                console.log(gameBoard)
+                // console.log(gameBoard)
+
+                //adding startValue before checking to fix the bug of when you get to 10 and no one wins - it's a draw
                 startValue++
                 checkResult()
-
-                console.log(startValue)
+                // console.log(startValue)
             }
-
+            //mark o when it's even
         } else if (startValue % 2 === 0) {
             if ($sqDiv.children().length === 0) {
                 $($sqDiv).append($oMark)
@@ -29,7 +30,6 @@ const markBoard = (event) => {
                 console.log(gameBoard)
                 startValue++
                 checkResult()
-
                 console.log(startValue)
             }
         }
