@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     text-align: center;
     text-transform: capitalize;
+    margin: 0;
 }
 
 header {
@@ -27,7 +28,7 @@ h3 {
 }
 
 button {
-    margin-top: 40px;
+    margin-top: 10px;
     width: 70px;
     height: 40px;
     font-family: 'Potta One', cursive;
@@ -67,3 +68,30 @@ div:hover, button:hover {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px){
+    header, footer {
+        margin-left: 65px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    body{
+        width: 100%;
+    }
+
+    header{
+        margin-left: 120px;
+        width: 300px;
+        overflow:visible;
+    }
+    h2,h3 {
+        width: 80%;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    footer {
+       margin-left: 160px;
+    }
+}
