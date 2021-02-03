@@ -37,7 +37,7 @@ const checkResult = () => {
         gameWin = true;
     }
 
-    // check for draw
+    // check for draw - if we marked 9 times(full board) - making startValue to 10 and gameWin still false then it's a draw
     if (startValue === 10 && gameWin === false) {
         $('.gameStatus').text(`it's a draw`)
     }
