@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+button {
+    margin-top: 40px;
+    width: 10%;
+}
+
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    margin-top: 15px;
+    border: 1px solid black;
+    background-color: bisque;
+    text-align: center;
+    overflow: hidden;
+}
+
+.markX, .markO {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 10px;
+}
+
+div:hover, button:hover {
+    cursor: pointer;
+}
+
