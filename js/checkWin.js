@@ -7,8 +7,6 @@ let gameWin = false
 
 const checkResult = () => {
 
-
-
     //checking all possible wins
     //check horizontal wins
     if (gameBoard[0] === gameBoard[1] && gameBoard[0] === gameBoard[2]) {

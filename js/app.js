@@ -12,7 +12,7 @@ const markBoard = (event) => {
         if (startValue % 2 === 1) {
             if ($sqDiv.children().length === 0) {
                 $($sqDiv).append($xMark)
-                //each time we add a mark we put values to a mapped out board
+                //each time we add a mark we put values to a mapped out board using the id of the div targetted
                 gameBoard[$sqDiv.attr('id')] = 'X'
                 //then we wanna run checkResult
                 // console.log(gameBoard)
